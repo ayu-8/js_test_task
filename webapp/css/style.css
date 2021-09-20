@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eef2ff;
+  font-family: arial, helvetica, sans-serif;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+}
+.section {
+  margin: 20px;
+  padding: 20px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+header {
+  background: top center no-repeat;
+  background-color: #252358;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.nav {
+  font-weight: bold;
+  display: flex;
+  background-color: #d6daf0;
+  padding: 10px;
+}
+.nav .item {
+  margin-left: 6%;
+}
+.nav .item:hover {
+  color: #dd0000;
+}
+.button {
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #888;
+  background: #fff;
+  outline: none;
+}
+.container {
+  align-items: center;
+  align-self: center;
+}
+#formSignup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #0f0c5d;
+  background: #d6daf0;
+}
+#formSignup input,
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 2px solid #0f0c5d;
+}
+.title {
+  font-weight: 600;
+  color: #eef2ff;
+}
+h1,
+h2 {
+  color: #0f0c5d;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  color: #000;
+  margin: 10px 0;
+}
+a:link {
+  color: #0f0c5d;
+  display: inline-block;
+  padding: 2px;
+  text-decoration: none;
+}
+a:hover {
+  color: #dd0000;
+}
+a:visited {
+  color: #0f0c5d;
+}
+a:active {
+  color: #8f0000;
+}
+footer {
+  background-color: #282a31;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 30px;
+  padding: 5px;
+}
+footer .item {
+  color: #fff;
+  margin-left: 4%;
+  padding: 5px;
+}
+footer .anchor {
+  color: #96bfcf;
+  margin-right: 4%;
+  padding: 5px;
+}
+.row1, .row2, .row3 {
+  display: flex;
+  max-width: 1000px;
+}
+.row1 {
+  margin-bottom: 20px;
+}
+.row2 {
+  margin-bottom: 10%;
+}
+.row3 {
+  margin-top: auto; 
+  justify-content: flex-end;
+}
+#pattern {
+  display: inline-block;
+}
+control{
+  position: relative;
+  display: inline-block;
+  background-color: #ffe600;
+  margin: 10px;
+}
+control.changed {
+  background-color: #15ff00;
+}
+control.wrong {
+  background-color: #ff1100;
+}
+.controlOptions {
+  position: absolute;
+  display: none;
+  border: 2px solid #0f0c5d;
+  background: #fff;
+  pointer-events: none;
+}
+.controlOption {
+  position: relative;
+  border: 1px solid #1d1b5a;
+  padding: 3px 11px 3px 11px;
+  line-height: 20px;
+  cursor: pointer;
+}
+control.open .controlOptions{
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+}
+control.locked {
+  pointer-events: none;
+}

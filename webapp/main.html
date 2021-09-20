@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Тестирование</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="pageContainer">
+    <header>
+      <h1 class="title">Тестирование</h1>
+    </header>
+    <nav class="nav">
+      <a class="item" href="main.html">Список тестов</a>
+      <a class="item" href="main.html" onclick="localStorage.clear()">Сменить пользователя</a>
+    </nav>
+    <section class="section">
+      <div class="container" id="formContainer">
+        <form id="formSignup">
+          <p>Введите данные</p>
+          <input type="text" name="givenName" autocomplete=off placeholder="Фамилия">
+          <input type="text" name="familyName" autocomplete=off placeholder="Имя">
+          <input type="text" name="patronymic" autocomplete=off placeholder="Отчество">
+          <input type="tel" name="phone" autocomplete=off placeholder="Телефон">
+          <select id="selectCity" name="city" placeholder="Город">
+            <option value="">--Выберите Город--</option>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Казань">Казань</option>
+            <option value="Нижний Новгород">Нижний Новгород</option>
+            <option value="Челябинск">Челябинск</option>
+            <option value="Самара">Самара</option>
+            <option value="Омск">Омск</option>
+            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+          </select>
+          <input class="button" type="button" onclick="submitFormSignup()" value="Подтвердить">
+        </form>
+      </div>
+      <div class="container" id="listContainer" hidden>
+        <h1>Список тестов:</h1>
+      </div>
+    </section>
+    <footer>
+      <div class="item"></div>
+    </footer>
+  </div>
+</body>
+
+</html>

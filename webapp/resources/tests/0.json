@@ -1,0 +1,34 @@
+{
+  "id": "0",
+  "name": "Some name",
+  "time": 45,
+  "contolsCount": 5,
+  "pattern": "<b>20 August 2020</b><br />Alexey Likhachov, director general of Rosatom, congratulated his staff today on the 75th anniversary of Russia's nuclear industry. To emphasise how the corporation is looking <control>1</control> the future, Rosatom <control>2</control> its switch to a \"united brand\" by using its Mobius strip logo for all of its subsidiaries.<br />On 20 August 1945, the USSR <control>3</control> a special <control>4</control> <control>5</control> nuclear research.",
+  "controls": {
+    "1": {
+      "current": "",
+      "answers": ["in", "to", "for"],
+      "correct": "to"
+    },
+    "2": {
+      "current": "",
+      "answers": ["has announced", "announced", "is announcing"],
+      "correct": "has announced"
+    },
+    "3": {
+      "current": "",
+      "answers": ["had created", "created", "has created"],
+      "correct": "created"
+    },
+    "4": {
+      "current": "",
+      "answers": ["committe", "comittee", "committee"],
+      "correct": "committee"
+    },
+    "5": {
+      "current": "",
+      "answers": ["to supervision", "to supervise", "for supervising"],
+      "correct": "to supervise"
+    }
+  }
+}
